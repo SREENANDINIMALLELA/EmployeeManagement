@@ -4,11 +4,13 @@ public abstract class Employee {
     private String name ;
     private String nI;
     private double salary ;
-    public Employee(String name , String nI , double salary ){
+
+    public Employee(String name, String nI, int salary) {
         this.name=name;
-        this.nI= nI;
+        this.nI=nI;
         this.salary=salary;
     }
+
 
     public String getName() {
         return name;
@@ -40,5 +42,6 @@ public abstract class Employee {
        double  bonus = this.salary / 100 ;
         return bonus;
     }
+
 
 }
